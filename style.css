@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1120px;
+  padding: 0 10;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #000000;
+}
+
+header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .container .logo {
+  border: 1px #FFFFFF;
+}
+
+header .container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  margin-left: 67px;
+  margin-right: 438px;
+  color: #FFFFFF;
+  text-decoration: none;
+  border: none;
+}
+
+header .container ul li {
+  text-decoration: none;
+  border: none;
+  margin-top: 29px;
+  margin-bottom: 29px;
+}
+
+header .container ul li a {
+  border: none;
+  text-decoration: none;
+  color: #F9804B;
+}
+
+header .container ul li:not(:first-child) {
+  margin-left: 58px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+header .container ul li:not(:first-child) a {
+  color: #FFFFFF;
+}
+
+header .container a {
+  margin-top: 29px;
+  margin-bottom: 29px;
+  border: none;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.watch__online {
+  background-image: url(/img/);
+}
+
+/*# sourceMappingURL=style.css.map */
