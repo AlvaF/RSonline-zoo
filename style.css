@@ -1,6 +1,8 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .container {
@@ -32,6 +34,7 @@ header .container {
 }
 
 header .container .logo {
+  margin-top: 14px;
   border: 1px #FFFFFF;
   text-decoration: none;
   color: #FFFFFF;
@@ -113,29 +116,72 @@ header .container .design:hover {
 }
 
 .online {
-  background: url(/img/1.png) 100% 100% no-repeat;
+  background: url(1.png) no-repeat;
+  background-position: left;
   height: 702px;
-  background-size: cover;
 }
 
-.online h1 {
+.online__wrap {
+  height: 702px;
+  background: url(Ellipse.svg) no-repeat 600px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.online figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 427px;
+}
+
+.online .watch {
+  margin-top: 86px;
+  margin-bottom: 60px;
   color: #FFFFFF;
   line-height: 80px;
+  text-align: center;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
   font-size: 106px;
 }
 
-.online h1 span {
+.online .watch span {
   color: #FFEE2E;
 }
 
 .online button {
   background-color: #F9804B;
-  border-radius: 12px;
+  border-radius: 32px;
   cursor: pointer;
   border: none;
+  width: 298px;
+  height: 54px;
+}
+
+.online button p {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #FFFFFF;
 }
 
 .online button:hover {
@@ -150,16 +196,195 @@ header .container .design:hover {
   background-color: #767474;
 }
 
-.online button p {
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url(img/flower_foto1.png) no-repeat 1320px 63px, url(img/palm.svg) no-repeat 0 1460px, url(img/strelitzia.svg) no-repeat 1152px 1643px;
+}
+
+.main .info {
+  padding-top: 140px;
+}
+
+.main .info__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main .info__wrap div {
+  margin-left: 87px;
+}
+
+.main .info__wrap div h2 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  /* or 58px */
+  color: #333B41;
+}
+
+.main .info__wrap div .site {
+  margin-top: 20px;
+  margin-bottom: 54px;
+}
+
+.main .info__wrap div h4 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #333B41;
+}
+
+.main .info__wrap div .goal {
+  margin-top: 34px;
+}
+
+.main .info__wrap div p {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #333B41;
+}
+
+.main .pets {
+  margin-top: 180px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .pets .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main .pets .cards__item {
+  background-color: #fff;
+  border: 1px #F9804B solid;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.main .pets .cards__item__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 16px;
+  padding-right: 10px;
+}
+
+.main .pets .cards__item__info .text h4 {
+  margin-top: 8px;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 140%;
-  /* or 22px */
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.main .pets .cards__item__info .text p {
+  margin-bottom: 14px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 120%;
+  color: #000000;
+}
+
+.main .pets button {
+  cursor: pointer;
+  background-color: #F9804B;
+  width: 62px;
+  height: 62px;
+  border: none;
+  border-radius: 50%;
+}
+
+.main .pets button:hover {
+  background-color: #E47209;
+}
+
+.main .pets button:active {
+  background-color: #4B9200;
+}
+
+.main .pets button:disabled {
+  background-color: #767474;
+}
+
+.main .pets .btnLeft {
+  width: 62px;
+  height: 62px;
+  margin-right: 20px;
+}
+
+.main .pets .btnRight {
+  width: 62px;
+  height: 62px;
+  margin-left: 15px;
+}
+
+.main button {
+  margin-top: 80px;
+  margin-bottom: 100px;
+  width: 298px;
+  height: 54px;
+  background-color: #FE9013;
+  border: none;
+  border-radius: 32px;
+  cursor: pointer;
+}
+
+.main button:hover {
+  background-color: #E47209;
+}
+
+.main button:active {
+  background-color: #4B9200;
+}
+
+.main button:disabled {
+  background-color: #767474;
+}
+
+.main button p {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
-  padding: 5px 16px;
 }
 /*# sourceMappingURL=style.css.map */
